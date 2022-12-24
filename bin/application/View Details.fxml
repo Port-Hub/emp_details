@@ -54,12 +54,12 @@
             <Label styleClass="label1" stylesheets="@styles.css" text="Gender" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Label styleClass="label1" stylesheets="@styles.css" text="Contact" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label styleClass="label1" stylesheets="@styles.css" text="Email" GridPane.rowIndex="4" />
-            <Label fx:id="fetch_f" prefHeight="27.0" prefWidth="390.0" GridPane.rowIndex="1" />
             <Label fx:id="fetch_ln" prefHeight="27.0" prefWidth="390.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label fx:id="fetch_DOB" prefHeight="27.0" prefWidth="390.0" GridPane.rowIndex="3" />
             <Label fx:id="fetch_gender" prefHeight="27.0" prefWidth="390.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label fx:id="fetch_email" prefHeight="27.0" prefWidth="390.0" GridPane.rowIndex="5" />
             <Label fx:id="fetch_contact" prefHeight="27.0" prefWidth="390.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="fetch_f" layoutX="408.0" layoutY="69.0" prefHeight="27.0" prefWidth="390.0" GridPane.rowIndex="1" />
          </children>
       </GridPane>
       <GridPane hgap="15.0" layoutX="247.0" layoutY="515.0" prefHeight="86.0" prefWidth="789.0">
@@ -96,10 +96,5 @@
             <Label fx:id="fetch_pincode" prefHeight="27.0" prefWidth="390.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
          </children>
       </GridPane>
-      <ImageView fitHeight="248.0" fitWidth="362.0" layoutX="922.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@profile%20pic.png" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>
