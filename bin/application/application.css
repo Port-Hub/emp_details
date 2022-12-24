@@ -1,0 +1,39 @@
+.login-bg{
+		-fx-background-color:linear-gradient(to bottom left, #f76bc2, #83b4e9)
+}
+
+
+.exit_button{
+	-fx-background-color:b64834;
+	-fx-background-radius:2px;
+		
+}
+
+.exit_button:hover{
+	-fx-background-color:c42b1c;
+}
+
+
+.textfield_design{
+	-fx-background-color:transparent;
+	-fx-background-radius:10px;
+	-fx-border-color: #0452;
+	-fx-border-radius:10px;
+	-fx-text-inner-color:#000;
+}
+
+.button_design{
+	-fx-background-color:linear-gradient(to bottom left, #f76bc2, #83b4e9);
+	-fx-background-radius:5px;
+	-fx-cursor:hand;
+}
+
+.button_design:hover{
+	-fx-background-color:linear-gradient(to bottom left, #83b4e9, #f76bc2);
+}
+
+.hyperlink_design{
+	-fx-text-fill:#1a73e8;
+	-fx-underline:false;
+	-fx-border-color:transparent;
+}

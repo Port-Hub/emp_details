@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.scene_controller">
+   <children>
+      <AnchorPane prefHeight="142.0" prefWidth="1200.0" styleClass="header" stylesheets="@styles.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="133.0" layoutX="1049.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@licet%20logo.png" />
+               </image></ImageView>
+            <ImageView fx:id="LI_banner" fitHeight="125.0" fitWidth="374.0" layoutX="413.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/img%20licet.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="724.0" prefHeight="77.0" prefWidth="1200.0" styleClass="footer" stylesheets="@styles.css">
+         <children>
+            <Button layoutX="1092.0" layoutY="23.0" mnemonicParsing="false" onAction="#switchtocreate" styleClass="exit-button" stylesheets="@styles.css" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="snd_createprofile" layoutX="933.0" layoutY="23.0" mnemonicParsing="false" onAction="#accountbuttononact" styleClass="edit-button" stylesheets="@styles.css" text="Create Profile" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Label fx:id="snd_qq" layoutX="41.0" layoutY="20.0" prefHeight="32.0" prefWidth="410.0" />
+         </children></AnchorPane>
+      <GridPane hgap="25.0" layoutX="46.0" layoutY="163.0" prefHeight="278.0" prefWidth="789.0" stylesheets="@styles.css" vgap="5.0" AnchorPane.bottomAnchor="359.0" AnchorPane.rightAnchor="365.0" AnchorPane.topAnchor="163.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="label1" stylesheets="@styles.css" text="Last Name" GridPane.columnIndex="1" />
+            <Label styleClass="label1" stylesheets="@styles.css" text="First Name">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></Label>
+            <Label styleClass="label1" stylesheets="@styles.css" text="Date of Birth" textAlignment="CENTER" GridPane.rowIndex="2" />
+            <Label styleClass="label1" stylesheets="@styles.css" text="Gender" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="label1" stylesheets="@styles.css" text="Contact" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label styleClass="label1" stylesheets="@styles.css" text="Email" GridPane.rowIndex="4" />
+            <TextField fx:id="snd_fn" styleClass="tf1" stylesheets="@styles.css" GridPane.rowIndex="1" />
+            <TextField fx:id="snd_ln" styleClass="tf1" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="snd_dob" styleClass="tf1" stylesheets="@styles.css" GridPane.rowIndex="3" />
+            <TextField fx:id="snd_gnd" styleClass="tf1" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="snd_email" styleClass="tf1" stylesheets="@styles.css" GridPane.rowIndex="5" />
+            <TextField fx:id="snd_contact" styleClass="tf1" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <GridPane hgap="15.0" layoutX="44.0" layoutY="505.0" prefHeight="86.0" prefWidth="789.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="766.0" minWidth="10.0" prefWidth="766.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="8.0" prefWidth="8.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="snd_add" prefHeight="63.0" prefWidth="449.0" GridPane.rowIndex="1" />
+            <Label styleClass="label1" stylesheets="@styles.css" text="Address">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font></Label>
+         </children>
+      </GridPane>
+      <GridPane hgap="15.0" layoutX="44.0" layoutY="604.0" prefHeight="86.0" prefWidth="532.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="label1" stylesheets="@styles.css" text="City" />
+            <Label styleClass="label1" stylesheets="@styles.css" text="Pincode" GridPane.columnIndex="1" />
+            <TextField fx:id="snd_city" prefHeight="79.0" prefWidth="223.0" GridPane.rowIndex="1" />
+            <TextField fx:id="snd_pin" prefHeight="140.0" prefWidth="222.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label layoutX="942.0" layoutY="209.0" styleClass="label1" stylesheets="@styles.css" text="Username" />
+      <Label layoutX="945.0" layoutY="287.0" styleClass="label1" stylesheets="@styles.css" text="Password" />
+      <TextField fx:id="snd_un" layoutX="943.0" layoutY="247.0" />
+      <TextField fx:id="snd_pass" layoutX="943.0" layoutY="333.0" />
+   </children>
+</AnchorPane>

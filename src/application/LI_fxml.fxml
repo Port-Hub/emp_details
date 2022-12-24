@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.scene_controller">
+   <children>
+      <AnchorPane layoutX="-18.0" layoutY="-6.0" prefHeight="808.0" prefWidth="611.0" styleClass="login-bg" stylesheets="@application.css">
+         <children>
+            <ImageView fx:id="LI_banner" fitHeight="125.0" fitWidth="374.0" layoutX="119.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/img%20licet.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="566.0" layoutY="72.0" prefHeight="972.0" prefWidth="924.0">
+         <children>
+            <Button fx:id="LI_loginButton" layoutX="286.0" layoutY="406.0" mnemonicParsing="false" onAction="#loginbuttononaction" prefHeight="39.0" prefWidth="105.0" styleClass="button_design" stylesheets="@application.css" text="Log in">
+               <font>
+                  <Font size="14.0" />   
+               </font>
+            </Button>
+            <TextField fx:id="LI_userName" layoutX="185.0" layoutY="294.0" prefHeight="39.0" prefWidth="306.0" promptText="User name" styleClass="textfield_design" stylesheets="@application.css" />
+            <PasswordField fx:id="LI_password" layoutX="184.0" layoutY="342.0" prefHeight="39.0" prefWidth="306.0" promptText="Password" styleClass="textfield_design" stylesheets="@application.css" />
+            <ImageView fx:id="LI_loginImage" fitHeight="256.0" fitWidth="256.0" layoutX="210.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/login%20man.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="LI_hyperlink" layoutX="251.0" layoutY="460.0" onAction="#switchtodetails" prefHeight="26.0" prefWidth="181.0" styleClass="hyperlink_design" stylesheets="@application.css" text="New user? create a account">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="LI_bigLabel" layoutX="288.0" layoutY="248.0" text="Welcome">
+               <font>
+                  <Font name="Calibri Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label id="PasswordCheck" fx:id="LI_passwordcheck" layoutX="185.0" layoutY="384.0" prefHeight="20.0" prefWidth="306.0" text=" " />
+         </children>  
+      </AnchorPane>
+   </children>
+</AnchorPane>
