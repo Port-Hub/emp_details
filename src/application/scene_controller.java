@@ -30,27 +30,7 @@ public class scene_controller {
 	@FXML
 	private Button snd_createprofile;
 	@FXML
-	private TextField snd_fn;
-	@FXML
-	private TextField snd_ln;
-	@FXML
-	private TextField snd_dob;
-	@FXML
-	private TextField snd_gnd;
-	@FXML
-	private TextField snd_email;
-	@FXML
-	private TextField snd_contact;
-	@FXML
-	private TextField snd_un;
-	@FXML
-	private TextField snd_pass;
-	@FXML
-	private TextField snd_add;
-	@FXML
-	private TextField snd_city; 
-	@FXML
-	private TextField snd_pin;
+	private TextField snd_fn,snd_ln,snd_dob,snd_gnd,snd_email,snd_contact,snd_un,snd_pass,snd_add,snd_city,snd_pin;
 	@FXML
 	private Label snd_qq,fetch_f,fetch_ln,fetch_DOB,fetch_gender,fetch_email,fetch_contact,fetch_address,fetch_city;
 	@FXML
