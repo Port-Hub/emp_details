@@ -17,7 +17,7 @@ public class Main extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("LI_fxml.fxml"));
 			Scene scene = new Scene(root);
 			
-			
+			//comment line to check github
 			
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
